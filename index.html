@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+      <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#skills">Skills & Tools</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#contact">Contact Me</a>
+      </nav>
+
+      <section id="home">
+          <div class="home-left">
+              <div class="hello">Hello!</div>
+              <div class="title">I'm Chris, an <span class="highlight">IT Graduate</span></div>
+              <p>Navigating the exciting world of development and design</p>
+              <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+          </div>
+          <div class="home-right">
+              <img src="2x2-removebg-preview.png" alt="Your Image">
+          </div>
+      </section>
+      <section id="about">
+          <h1>About Me</h1>
+          <p>Details about my background, education, and skills.</p>
+      </section>
+      <section id="skills">
+          <h1>Skills & Tools</h1>
+          <p>Programming languages, frameworks, and tools I use.</p>
+      </section>
+      <section id="experience">
+          <h1>Experience</h1>
+          <p>Internships, projects, or work experience details.</p>
+      </section>
+      <section id="projects">
+          <h1>Projects</h1>
+          <p>Showcase of my best work.</p>
+      </section>
+      <section id="certificates">
+          <h1>Certificates</h1>
+          <p>My certifications and achievements.</p>
+      </section>
+      <section id="contact">
+          <h1>Contact Me</h1>
+          <p>Email, LinkedIn, and other contact details.</p>
+      </section>
+
+      <script>
+          document.querySelectorAll('nav a').forEach(anchor => {
+              anchor.addEventListener('click', function(event) {
+                  event.preventDefault();
+                  const targetId = this.getAttribute('href').substring(1);
+                  const targetElement = document.getElementById(targetId);
+
+                  if (targetElement) {
+                      window.scrollTo({
+                          top: targetElement.offsetTop - 50,
+                          behavior: 'smooth'
+                      });
+                  }
+              });
+          });
+      </script>
+  </body>
+
+</html>

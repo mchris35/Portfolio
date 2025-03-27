@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: #0D001E;
+    color: #5983FC;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(41, 53, 86, 0);
+    backdrop-filter: blur(10px);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  nav a:hover {
+      color: #5983FC;
+  }
+  
+  section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background: #0D001E;
+  }
+  
+  #home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .home-left {
+    max-width: 50%;
+    text-align: left;
+  }
+  
+  .home-left .hello {
+    font-family: 'Brush Script MT';
+    color: white;
+    font-size: 30px;
+  }
+  
+  .home-left .title {
+    font-size: 32px;
+    color: #5983fc;
+  }
+  
+  .home-left .title .highlight {
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+  }
+  
+  .home-right {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to bottom, #0D001E 30%, #5983fc 70%);
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .home-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .resume-btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: transparent;
+    border: 3px solid;
+    border-color: #191970;
+    font-size: 12px;
+    font-weight: bold;
+    color: #324ab2;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 15px;
+    display: inline-block;
+  }
+  
+  .resume-btn:hover {
+    color: white;
+    background: #191970;
+  }
