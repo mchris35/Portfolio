@@ -443,7 +443,21 @@ body {
   outline: none;
 }
 
-/* Bottom info boxes */
+.send {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #5983FC;;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.send:hover {
+  background-color: white;
+}
+
 .info-grid {
   display: flex;
   justify-content: space-between;
