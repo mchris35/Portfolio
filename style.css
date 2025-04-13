@@ -256,11 +256,6 @@ body {
   color: #ccc;
 }
 
-.project-box .techstack {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 10px;
-}
-
 .carousel {
   position: relative;
   width: 100%;
@@ -304,9 +299,19 @@ body {
   right: 10px;
 }
 
+.project-box .techstack {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 10px;
+}
+
+.techstack-row {
+  display: flex;
+  gap: 10px;
+}
+
 .techstack-box {
   border-radius: 30px;
-  width: 48px;
+  width: auto;
   padding: 6px;
   align-content: center;
   text-align: center;
@@ -314,6 +319,10 @@ body {
   font-weight: bold;
   color: black;
   background: #5983FC;
+}
+
+.role {
+  color: white;
 }
 
 #contact {
