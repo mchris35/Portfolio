@@ -256,6 +256,11 @@ body {
   color: #ccc;
 }
 
+.project-box .techstack {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 10px;
+}
+
 .carousel {
   position: relative;
   width: 100%;
@@ -297,4 +302,130 @@ body {
 
 .next {
   right: 10px;
+}
+
+.techstack-box {
+  border-radius: 30px;
+  width: 48px;
+  padding: 6px;
+  align-content: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  background: #5983FC;
+}
+
+#contact {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 40px;
+  border: 2px solid #5983FC;
+  background-color: rgba(89, 131, 252, 0.1);
+}
+
+/* Form layout */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* Left side */
+.form-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-row label {
+  width: 70px;
+  font-weight: 500;
+  color: white;
+  text-align: right;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 2px solid transparent;
+  border-bottom-color: #5983FC;
+  border-right-color: #5983FC;
+  color: white;
+  background-color: rgba(89, 130, 252, 0.05);
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.input-row input:focus {
+  border-color: #5983FC;
+  outline: none;
+}
+
+/* Right side */
+.form-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-right label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: white;
+}
+
+.form-right textarea {
+  height: 95px;
+  resize: none;
+  overflow-y: auto;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: rgba(89, 130, 252, 0.05);
+  border: 2px solid transparent;
+  border-bottom-color: #5983FC;
+  border-right-color: #5983FC;
+}
+
+.form-right textarea:focus {
+  border-color: #5983FC;
+  outline: none;
+}
+
+/* Bottom info boxes */
+.info-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.info-box {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.info-box:hover {
+  color: #3a7bfd;
+  cursor: pointer;
 }
